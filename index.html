@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+            margin-inline-end: 8px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-inline-start: 8px;
+            margin-block-end: 12px;
+            margin-block-start: 12px;
+            background-color: beige;
+            color: black;
+            border: 4px solid black;
+            padding: auto;
+            text-decoration: solid;
+            text-align: center;
+            font-weight: bolder;
+        }
+        #time{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <span id="time"></span>
+    </div>
+    <script>
+        let a=16;
+        let newDate=new Date(2003,8,16);
+        console.log(newDate);
+        let y=newDate.getFullYear();
+            console.log("YEAR:",y);
+        let m=newDate.getMonth();
+            console.log("MONTH:",m);
+        let d=newDate.getDate();
+            console.log("DATE:",d);
+        newDate.setDate(51);
+       // newDate.setTime(21:39);
+        console.log(newDate);
+        setInterval(updateTime,1000);
+        function updateTime()
+        {
+            time.innerHTML=new Date();
+        }
+        
+    </script>
+</body>
+</html>
